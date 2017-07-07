@@ -100,6 +100,7 @@ namespace Microsoft.WindowsAzure.Storage
             }
         }
 
+#if !SANDBOX
         /// <summary>
         /// Populates a <see cref="System.Runtime.Serialization.SerializationInfo"/> object with the data needed to serialize the target object.
         /// </summary>
@@ -115,6 +116,7 @@ namespace Microsoft.WindowsAzure.Storage
 
             base.GetObjectData(info, context);
         }
+#endif
 #endif
 
         /// <summary>
